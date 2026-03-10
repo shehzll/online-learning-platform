@@ -106,3 +106,32 @@ border-bottom:1px solid #eee;
 .lesson-list li:hover{
 background:#f4f4f4;
 }
+
+.quiz-page{
+padding:40px;
+text-align:center;
+}
+
+.quiz-container{
+background:white;
+padding:30px;
+max-width:600px;
+margin:auto;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.quiz-container label{
+display:block;
+margin:10px 0;
+cursor:pointer;
+}
+
+.quiz-container button{
+margin-top:20px;
+padding:10px 20px;
+border:none;
+background:#4CAF50;
+color:white;
+cursor:pointer;
+}
