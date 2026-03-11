@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LearnHub - Online Learning Platform</title>
+<title>LearnHub | Online Learning Platform</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,22 +16,27 @@
 
 <nav>
 <a href="index.html">Home</a>
-<a href="#courses">Courses</a>
-<a href="#">Login</a>
+<a href="course.html">Courses</a>
+<a href="progress.html">Progress</a>
+<a href="login.html">Login</a>
 </nav>
 
 </header>
 
+
 <section class="hero">
 
 <h2>Learn Skills Online</h2>
-<p>Watch lessons, take quizzes, and track your progress.</p>
+<p>Watch video lessons, take quizzes and track your progress.</p>
 
-<button onclick="startLearning()">Start Learning</button>
+<button onclick="location.href='course.html'">
+Start Learning
+</button>
 
 </section>
 
-<section class="courses" id="courses">
+
+<section class="courses">
 
 <h2>Popular Courses</h2>
 
@@ -39,20 +44,20 @@
 
 <div class="course-card">
 <h3>HTML Basics</h3>
-<p>Learn the foundation of web development.</p>
-<button onclick="location.href='course.html'">Start Course</button>
+<p>Learn HTML from scratch.</p>
+<button onclick="location.href='course.html'">Start</button>
 </div>
 
 <div class="course-card">
 <h3>CSS Styling</h3>
-<p>Design beautiful websites.</p>
-<button>Start Course</button>
+<p>Design modern websites.</p>
+<button onclick="location.href='course.html'">Start</button>
 </div>
 
 <div class="course-card">
 <h3>JavaScript</h3>
 <p>Add interactivity to websites.</p>
-<button>Start Course</button>
+<button onclick="location.href='course.html'">Start</button>
 </div>
 
 </div>
@@ -61,12 +66,11 @@
 
 <footer>
 
-<p>© 2026 LearnHub | Online Learning Platform</p>
+<p>© 2026 LearnHub</p>
 
 </footer>
 
-<script src="script.js"></script>
-
 </body>
-
 </html>
+
+

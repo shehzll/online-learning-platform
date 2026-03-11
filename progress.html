@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Progress | LearnHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Your Learning Progress</h2>
+
+<p id="progress"></p>
+
+<script>
+
+let score = localStorage.getItem("quizScore");
+
+if(score){
+
+document.getElementById("progress").innerText =
+"Your latest quiz score: " + score;
+
+}else{
+
+document.getElementById("progress").innerText =
+"You have not taken the quiz yet.";
+
+}
+
+</script>
+
+</body>
+</html>
