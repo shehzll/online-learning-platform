@@ -28,6 +28,17 @@
 <h2>Web Development Course</h2>
 
 <div class="course-layout">
+<div class="progress-section">
+<h3>Course Progress</h3>
+
+<div class="progress-bar">
+<div id="progressFill"></div>
+</div>
+
+<p id="progressText">0% Completed</p>
+
+</div>
+
 
 <div class="video-player">
 
@@ -51,28 +62,29 @@ allowfullscreen>
 <h3>HTML Lessons</h3>
 
 <ul>
-<li onclick="playVideo('HD13eq_Pmp8')">HTML Introduction</li>
-<li onclick="playVideo('qz0aGYrrlhU')">HTML Tags</li>
-<li onclick="playVideo('UB1O30fR-EE')">HTML Crash Course</li>
+<li onclick="playVideo('HD13eq_Pmp8'); updateProgress();">HTML Introduction</li>
+<li onclick="playVideo('qz0aGYrrlhU'); updateProgress();">HTML Tags</li>
+<li onclick="playVideo('UB1O30fR-EE'); updateProgress();">HTML Crash Course</li>
 </ul>
 
 <h3>CSS Lessons</h3>
 
 <ul>
-<li onclick="playVideo('1PnVor36_40')">CSS Introduction</li>
-<li onclick="playVideo('yfoY53QXEnI')">CSS Flexbox</li>
-<li onclick="playVideo('OXGznpKZ_sA')">CSS Grid</li>
+<li onclick="playVideo('1PnVor36_40'); updateProgress();">CSS Introduction</li>
+<li onclick="playVideo('yfoY53QXEnI'); updateProgress();">CSS Flexbox</li>
+<li onclick="playVideo('OXGznpKZ_sA'); updateProgress();">CSS Grid</li>
 </ul>
 
 <h3>JavaScript Lessons</h3>
 
 <ul>
-<li onclick="playVideo('W6NZfCO5SIk')">JavaScript Introduction</li>
-<li onclick="playVideo('PkZNo7MFNFg')">JavaScript Full Course</li>
-<li onclick="playVideo('upDLs1sn7g4')">JavaScript DOM Basics</li>
+<li onclick="playVideo('W6NZfCO5SIk'); updateProgress();">JavaScript Introduction</li>
+<li onclick="playVideo('PkZNo7MFNFg'); updateProgress();">JavaScript Full Course</li>
+<li onclick="playVideo('upDLs1sn7g4'); updateProgress();">JavaScript DOM Basics</li>
 </ul>
 
 </div>
+
 
 
 </div>

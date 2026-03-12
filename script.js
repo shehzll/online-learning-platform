@@ -54,3 +54,38 @@ message.innerText = "Invalid Username or Password";
 
 }
 
+let completedLessons = 0;
+let totalLessons = 3;
+
+function updateProgress(){
+
+completedLessons++;
+
+let percent = (completedLessons / totalLessons) * 100;
+
+document.getElementById("progressFill").style.width = percent + "%";
+
+document.getElementById("progressText").innerText = percent + "% Completed";
+
+if(percent === 100){
+alert("Congratulations! You completed the course 🎉");
+}
+
+}
+
+function submitQuiz(){
+
+let answer = document.querySelector('input[name="q1"]:checked');
+
+if(!answer){
+alert("Please select an answer");
+return;
+}
+
+if(answer.value === "correct"){
+alert("Correct Answer 🎉");
+}else{
+alert("Wrong Answer ❌");
+}
+
+}
